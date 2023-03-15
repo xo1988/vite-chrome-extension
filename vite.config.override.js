@@ -6,11 +6,11 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   base: './',
-  root: 'src/content',
+  root: 'src/override',
   build: {
     rollupOptions: {
       output: {
-        dir: "dist/content"
+        dir: "dist/override"
       }
     }
   }

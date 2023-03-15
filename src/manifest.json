@@ -1,8 +1,8 @@
 {
-  "name": "风",
+  "name": "vite",
   "version": "1.0.0",
   "manifest_version": 3,
-  "description": "xxx",
+  "description": "vite chrome extension tempalte",
   "icons": {
     "16": "assets/vue.svg",
     "48": "assets/vue.svg",
@@ -16,6 +16,6 @@
     "open_in_tab": false
   },
   "chrome_url_overrides" : {
-    "newtab": "content/index.html"
+    "newtab": "override/index.html"
   }
 }
