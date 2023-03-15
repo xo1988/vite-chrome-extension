@@ -6,11 +6,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   base: './',
+  root: 'src/content',
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
       output: {
         dir: "dist/content"
       }
