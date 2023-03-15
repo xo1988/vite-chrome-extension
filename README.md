@@ -1,7 +1,40 @@
-# Vue 3 + Vite
+# Vite + Vue 3 + Chrome Extension
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vite Vue 3 for Chrome Extension
 
-## Recommended IDE Setup
+## Usage
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Folder dictionary like below:
+
+```bash
+- src
+  - assets # icon for manifest
+  - background # background service worker
+  - override # override page
+  - popup # popup page
+  - manifest.json # manifest for v3
+  - vite.config.override.js # for override project
+  - vite.config.background.js # for background project
+  - vite.config.popup.js # for popup project
+  - build.sh # build shell
+```
+
+Then build whole project to gen dist folder.
+Now support background work, popup and override.
+Each project can configure isolate.
+
+```javascript
+npm initall
+
+npm run build
+```
+
+Build shell compile projects and copy or move files. Some like below.
+```javascript
+vite build -c vite.config.popup.js &&\
+vite build -c vite.config.override.js &&\
+vite build -c vite.config.background.js
+```
+
+<img src="https://github.com/xo1988/vite-chrome-extension/blob/develop/bmc_qr.png" width="180">
+
