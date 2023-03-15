@@ -36,4 +36,5 @@ vite build -c vite.config.override.js &&\
 vite build -c vite.config.background.js
 ```
 
-![Thank you very much~](bmc_qr.png =180x180)
+<img src="https://github.com/xo1988/vite-chrome-extension/blob/develop/bmc_qr.png" width="180">
+
