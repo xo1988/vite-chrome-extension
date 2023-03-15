@@ -35,3 +35,5 @@ vite build -c vite.config.popup.js &&\
 vite build -c vite.config.override.js &&\
 vite build -c vite.config.background.js
 ```
+
+![Thank you very much~](bmc_qr.png)
