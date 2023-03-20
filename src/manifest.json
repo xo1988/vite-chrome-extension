@@ -17,5 +17,16 @@
   },
   "chrome_url_overrides" : {
     "newtab": "override/index.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*"],
+      "run_at": "document_start",
+      "js": ["content_scripts/content_scripts.js"],
+      "css": ["content_scripts/style.css"]
+    }
+  ],
+  "permissions": [
+    "downloads"
+  ]
 }

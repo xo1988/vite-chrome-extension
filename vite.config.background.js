@@ -6,13 +6,17 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   build: {
+    lib: {
+      entry: 'background.js',
+      name: 'background',
+      fileName: 'background'
+    },
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/background/background.js'),
+        main: resolve(__dirname, 'src/background/background.ts'),
       },
       output: {
-        dir: "dist/background",
-        entryFileNames: "background.js"
+        dir: "dist/background"
       }
     }
   }
