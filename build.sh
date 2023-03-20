@@ -4,6 +4,7 @@ rm -rf dist/* &&\
 vite build -c vite.config.popup.js &&\
 vite build -c vite.config.override.js &&\
 vite build -c vite.config.background.js &&\
+vite build -c vite.config.content_scripts.js &&\
 
 cp -r src/assets dist &&\
 cp src/manifest.json dist/manifest.json &&\
