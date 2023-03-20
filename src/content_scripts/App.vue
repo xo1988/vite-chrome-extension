@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+console.log('content scripts')
 </script>
 
 <style scoped>
