@@ -11,9 +11,12 @@
   "background": {
     "service_worker": "background/background.js"
   },
+  "action": {
+    "default_popup": "popup/index.html"
+  },
   "options_ui": {
-    "page": "popup/index.html",
-    "open_in_tab": false
+    "page": "option/index.html",
+    "open_in_tab": true
   },
   "chrome_url_overrides" : {
     "newtab": "override/index.html"

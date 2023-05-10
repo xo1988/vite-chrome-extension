@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  text-align: center;
+  background-color: #333;
+}
