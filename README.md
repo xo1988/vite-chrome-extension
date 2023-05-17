@@ -16,6 +16,7 @@ Folder dictionary like below:
   - vite.config.override.js # for override project
   - vite.config.background.js # for background project
   - vite.config.popup.js # for popup project
+  - vite.config.option.js # for option project
   - vite.config.content_scripts.js # for content_scripts project
   - build.sh # build shell
 ```
@@ -34,6 +35,7 @@ Build shell compile projects and copy or move files. Some like below.
 ```javascript
 vite build -c vite.config.popup.js &&\
 vite build -c vite.config.override.js &&\
+vite build -c vite.config.option.js &&\
 vite build -c vite.config.background.js &&\
 vite build -c vite.config.content_scripts.js
 ```

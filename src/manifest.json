@@ -1,8 +1,9 @@
 {
-  "name": "vite",
+  "name": "__MSG_appName__",
   "version": "1.0.0",
   "manifest_version": 3,
-  "description": "vite chrome extension tempalte",
+  "default_locale": "en",
+  "description": "__MSG_appDesc__",
   "icons": {
     "16": "assets/vue.svg",
     "48": "assets/vue.svg",
