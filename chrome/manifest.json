@@ -5,22 +5,22 @@
   "default_locale": "en",
   "description": "__MSG_appDesc__",
   "icons": {
-    "16": "assets/vue.svg",
-    "48": "assets/vue.svg",
-    "128": "assets/vue.svg"
+    "16": "assets/cv.png",
+    "48": "assets/cv.png",
+    "128": "assets/cv.png"
   },
   "background": {
     "service_worker": "background/background.js"
   },
   "action": {
-    "default_popup": "popup/index.html"
+    "default_popup": "popup.html"
   },
   "options_ui": {
-    "page": "option/index.html",
+    "page": "option.html",
     "open_in_tab": true
   },
   "chrome_url_overrides" : {
-    "newtab": "override/index.html"
+    "newtab": "override.html"
   },
   "content_scripts": [
     {

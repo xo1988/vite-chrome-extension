@@ -7,18 +7,23 @@ Vite Vue 3 for Chrome Extension
 Folder dictionary like below:
 
 ```bash
+- chrome # for manifest, _locales, assets log
+  - assets # logo
+  - _locales # locales
+  - manifest.json # manifest for v3
 - src
   - assets # icon for manifest
   - background # background service worker
   - override # override page
   - popup # popup page
-  - manifest.json # manifest for v3
-  - vite.config.override.js # for override project
+  - option # option page
   - vite.config.background.js # for background project
-  - vite.config.popup.js # for popup project
-  - vite.config.option.js # for option project
   - vite.config.content_scripts.js # for content_scripts project
+  - vite.config.js # for option, override, popup // multi entry
   - build.sh # build shell
+- popup.html # popup.html
+- option.html # option
+- override.html # override
 ```
 
 Then build whole project to gen dist folder.
@@ -33,9 +38,7 @@ npm run build
 
 Build shell compile projects and copy or move files. Some like below.
 ```javascript
-vite build -c vite.config.popup.js &&\
-vite build -c vite.config.override.js &&\
-vite build -c vite.config.option.js &&\
+vite build -c vite.config.js &&\
 vite build -c vite.config.background.js &&\
 vite build -c vite.config.content_scripts.js
 ```
