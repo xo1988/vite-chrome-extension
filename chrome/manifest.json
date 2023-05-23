@@ -10,7 +10,7 @@
     "128": "assets/cv.png"
   },
   "background": {
-    "service_worker": "background/background.js"
+    "service_worker": "js/background.js"
   },
   "action": {
     "default_popup": "popup.html"
@@ -26,8 +26,8 @@
     {
       "matches": [ "http://*/*", "https://*/*"],
       "run_at": "document_start",
-      "js": ["content_scripts/content_scripts.js"],
-      "css": ["content_scripts/style.css"]
+      "js": ["js/content_scripts.js"],
+      "css": ["js/style.css"]
     }
   ],
   "permissions": [

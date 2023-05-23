@@ -1,3 +1,9 @@
 <template>
-    <div>popup</div>
+    <div id="popup">popup</div>
 </template>
+<style>
+#popup {
+    font-size: 32px;
+    color: red;
+}
+</style>

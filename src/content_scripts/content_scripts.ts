@@ -1,5 +1,5 @@
-import { createApp } from "vue"
-import App from "./App.vue"
+import { createApp } from 'vue'
+import App from './App.vue'
 
 window.onload = async () => {
   const el = document.querySelector('body')
