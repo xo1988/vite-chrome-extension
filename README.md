@@ -54,5 +54,14 @@ vite build -c vite.config.script.js &&\
 cp -rf chrome/* dist
 ```
 
+### local
+Multi language support, add corresponding copy in the local. xlsx file, and execute the genLocal. py file to generate corresponding multi language support.
+
+![local screen shot](./local.png)
+
+```python
+python genLocal.py
+```
+
 <img src="https://github.com/xo1988/vite-chrome-extension/blob/develop/bmc_qr.png" width="180">
 
