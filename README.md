@@ -1,4 +1,4 @@
-# Vite + Vue 3 + Chrome Extension
+# Vite + Vue 3 + Chrome Extension + tailwindcss
 
 Vite Vue 3 for Chrome Extension
 

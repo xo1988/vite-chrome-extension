@@ -1,5 +1,5 @@
 <template>
-    <div id="option">option</div>
+    <div id="option" class="bg-red-500">option</div>
 </template>
 <style>
 #option {

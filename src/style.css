@@ -8,3 +8,7 @@ body {
   background-color: #333;
   color: white;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
